@@ -18,6 +18,7 @@ class A {
     }
 };
 
+
 //void myprint(const int i, const A pmybuf) {   // 会多一次拷贝构造
 void myprint(const int i, const A &pmybuf) {
   cout << "子线程myprint的参数地址为" << &pmybuf << " thread_id = " << this_thread::get_id() << endl;
